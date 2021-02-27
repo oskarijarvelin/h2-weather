@@ -35,7 +35,7 @@ export default function Weather({lat, lng}) {
         alert('Weather API Error: ' + error);
       }
     )
-  }, []) 
+  }, [REACT_APP_API_URL, REACT_APP_API_KEY, REACT_APP_ICON_URL, lat, lng]) 
 
   return (
     <div className="pt-4">
