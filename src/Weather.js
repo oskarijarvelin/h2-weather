@@ -21,7 +21,7 @@ export default function Weather({lat, lng, isLoadingCoords}) {
     .then(res => res.json())
     .then(
       (result) => {
-        if (result.main != undefined) {
+        if (result.main !== undefined) {
           setTemp(result.main.temp);
           setSpeed(result.wind.speed);
           setDir(result.wind.deg);
@@ -54,7 +54,7 @@ export default function Weather({lat, lng, isLoadingCoords}) {
             <p><b className="weather-prop">Temperature:</b> {temp} &#8451;</p>
             <p><b className="weather-prop">Wind speed:</b> {speed} m/s</p>
             <p><b className="weather-prop">Wind direction:</b> {dir} deg</p>
-            <img src={icon} style={{position: "absolute", top: "10px", left: "10px"}} />
+            <img src={icon} alt={desc} style={{position: "absolute", top: "10px", left: "10px"}} />
           </Alert>
         </>
       }
