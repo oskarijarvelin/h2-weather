@@ -47,7 +47,7 @@ function App() {
             }
 
             {isLoadingCoords === false &&
-              <Weather lat={lat} lng={lng} isLoadingCoords={isLoadingCoords} /> 
+              <Weather lat={lat} lng={lng} /> 
             }
           </Col>
         </Row>

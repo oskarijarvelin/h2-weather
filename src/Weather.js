@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Alert, Spinner } from 'react-bootstrap';
 
-export default function Weather({lat, lng, isLoadingCoords}) {
+export default function Weather({lat, lng}) {
   const { REACT_APP_API_URL, REACT_APP_API_KEY, REACT_APP_ICON_URL } = process.env;
   const [temp, setTemp] = useState(0);
   const [speed, setSpeed] = useState(0);
